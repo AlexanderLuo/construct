@@ -1,0 +1,45 @@
+<div>
+
+    <div class="navbar second_level navbar-fixed-top">
+        <div class="container clear">
+            <ul class="nav navbar-nav">
+                <li class="active"  ms-for="el in @categories">
+                    <a id="xiaowuyingyong">{{el.name}}</a>
+                </li>
+            </ul>
+
+            <div class="add_navbar">
+                <a class="btn btn-onlytxt appbtn_back"><i class="qkyicon_14 mr5"></i>返回</a>
+                <span class="nav_title"></span>
+            </div>
+            <div class="seachApp">
+                <i class="qkyicon_mian"></i>
+                <input type="text" class="form-control" placeholder="搜索应用" ms-duplex="@searchKey">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt15 appcenter_mian">
+
+        <div class="qkycadr app_box" ms-for="el in @dataList ">
+            <h4><i class="qkyicon_mian"></i><a>{{@transCode(el.categorieCode)}}</a></h4>
+
+            <div class="app_ul clear" >
+                <div class="app_ul_" ms-for="fl in el.data  | filterBy(@search,@searchKey)" data-for-rendered='@emptyCheck' >
+                    <div class="app_list clear" listid="http://ks3.qky100.com/20160126090037.yLyWbv06Om.png">
+                        <div class="fl app_icon"><img src="http://ks3.qky100.com/20160126090037.yLyWbv06Om.png" alt=""></div>
+                        <div class="fl app_cont"><a class="txt" >{{fl.name}}</a><a class="btn btn-default btn-sm stop_use">停用</a></div>
+                    </div>
+                </div>
+
+                <div class="app_list clear add_list">
+                    <div class="fl app_icon add"><i class="qkyicon_14 fz_30"></i></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+

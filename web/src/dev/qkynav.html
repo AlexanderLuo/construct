@@ -1,0 +1,256 @@
+
+<div class="navbar navbar-default navbar-fixed-top app" >
+
+<div class="container-fluid po_r">
+    <div class="nav_box clear fl">
+        <a class="navbtn fl" :on-click="@open"><i class="qkyicon_12 fz_18">&#xe612;</i></a>
+        <div class="nav_logo"><img ms-attr="{src:@logo}"></div>
+        <div class="navline"></div>
+        <div class="nav_pjname">{{@title}}</div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">导航1</a></li>
+            <li><a href="#">导航2</a></li>
+            <li><a href="#">导航3</a></li>
+        </ul>
+    </div>
+
+    <ul class="nav_other">
+
+        <li class="nav_news_box">
+            <a class="nav_news_icon"><i class="qkyicon_14 fz_18">&#xe611;</i><span class="nav_news_badge badge">99</span></a>
+            <div class="nav_news_popup">
+                <div class="nav_news_libox">
+                    <div class="nav_news_li clear">
+                        <div class="nav_news_appicon fl">
+                            <div class="app_icon">APP</div>
+                        </div>
+                        <div class="nav_news_info fl">
+                            <div class="clear">
+                                <div class="fl nav_news_txt">
+                                    <label class="nav_news_name">在线测试开放答题</label>
+                                    <span class="nav_news_times">2017-03-28 13:00</span>
+                                </div><div class="fr nav_news_appname">学习管理平台</div>
+                            </div>
+                            <div class="nav_news_cont">课程西方近代史的测试第一阶段测试已于2017-03-28 13:00开放答题</div>
+                        </div>
+                    </div>
+                    <div class="nav_news_li clear">
+                        <div class="nav_news_appicon fl">
+                            <div class="app_icon">APP</div>
+                        </div>
+                        <div class="nav_news_info fl">
+                            <div class="clear">
+                                <div class="fl nav_news_txt">
+                                    <label class="nav_news_name">测试已截止</label>
+                                    <span class="nav_news_times">2017-03-28 13:00</span>
+                                </div>
+                                <div class="fr nav_news_appname">考务管理</div>
+                            </div>
+                            <div class="nav_news_cont">课程中国文化概论的测试课后小练习已于2017-03-28 10:30截止</div>
+                        </div>
+                    </div>
+                    <div class="nav_news_li clear">
+                        <div class="nav_news_appicon fl">
+                            <div class="app_icon">APP</div>
+                        </div>
+                        <div class="nav_news_info fl">
+                            <div class="clear">
+                                <div class="fl nav_news_txt">
+                                    <label class="nav_news_name">课程成员加入</label>
+                                    <span class="nav_news_times">2017-03-28 09:12</span>
+                                </div>
+                                <div class="fr nav_news_appname">作业管理</div>
+                            </div>
+                            <div class="nav_news_cont">新的成员学生张小画加入课程设计概论</div>
+                        </div>
+                    </div>
+                    <div class="nav_news_li clear">
+                        <div class="nav_news_appicon fl">
+                            <div class="app_icon">APP</div>
+                        </div>
+                        <div class="nav_news_info fl">
+                            <div class="clear">
+                                <div class="fl nav_news_txt">
+                                    <label class="nav_news_name">作业互评已经截止</label>
+                                    <span class="nav_news_times">2017-03-27 15:00</span>
+                                </div>
+                                <div class="fr nav_news_appname">校园办公</div>
+                            </div>
+                            <div class="nav_news_cont">课程西方近代史的作业课后作业已于2017-03-27 15:00截止互评，去查看互评结果并批改作业吧</div>
+                        </div>
+                    </div>
+                    <div class="nav_news_li clear">
+                        <div class="nav_news_appicon fl">
+                            <div class="app_icon">APP</div>
+                        </div>
+                        <div class="nav_news_info fl">
+                            <div class="clear">
+                                <div class="fl nav_news_txt">
+                                    <label class="nav_news_name">作业提交</label>
+                                    <span class="nav_news_times">2017-03-27 11:00</span>
+                                </div>
+                                <div class="fr nav_news_appname">考务管理</div>
+                            </div>
+                            <div class="nav_news_cont">课程中国文化概论的作业文化解析已有6名学生提交，提交率23%</div>
+                        </div>
+                    </div>
+                </div>
+                <a class="nav_allnaws_check" href="newscenter.html">查看所有应用消息</a>
+            </div>
+        </li>
+
+
+
+
+
+
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle clear other_sel" data-toggle="dropdown">
+                <div class="user_photo fl"><i class="qkyicon_mian">&#xe642;</i></div>
+                <span class="fl other_name">{{@userName}}</span>
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" id="otherli">
+                <li><a href="#">个人空间</a></li>
+                <li><a href="#">账户设置</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a id="toOut">退出</a></li>
+            </ul>
+        </li>
+
+
+
+
+    </ul>
+
+
+    <div id="navbar" class="navbar-collapse collapse">
+    	<ul class="nav navbar-nav"></ul>
+    </div>
+    <div class="nav_more row">
+        <div class="nav_more_left col-xs-3">
+            <div class="nav_more_lli">
+                    <h5><i class="qkyicon_mian mr5">&#xe640;</i><span>最近访问</span></h5>
+                <div class="li_a clear">
+                    <a href="#">教育大数据分析</a>
+                    <a href="#">校园缴费</a>
+                    <a href="#">就餐管理</a>
+                    <a href="#">电子班牌</a>
+                    <a href="#">车辆预约管理</a>
+                    <a href="#">教师培训</a>
+                    <a href="#">空间预约管理</a>
+                    <a href="#">教师业务档案</a>
+                    <a href="#">校园服务岗</a>
+                </div>
+            </div>
+            <div class="nav_more_lli">
+                    <h5 class="clear"><i class="qkyicon_mian mr5">&#xe643;</i><span>常用应用</span> <a class="setup fr" data-toggle="model"  data-target="#comapp_setup">设置</a></h5>
+                <div class="li_a clear">
+                    <a href="#">电子图书馆</a>
+                    <a href="#">校友家园</a>
+                    <a href="#">考勤管理</a>
+                    <a href="#">党工团管理</a>
+                    <a href="#">一卡通</a>
+                    <a href="#">校园缴费</a>
+                    <a href="#">车辆预约管理</a>
+                    <a href="#">教育大数据分析</a>
+                    <a href="#">校园服务岗</a>
+                    <a href="#">校产管理</a>
+                </div>
+            </div>
+        </div>
+        <a class="appCenter clear  col-xs-3" href="appcenter.html"><i class="qkyicon_mian fl mr5 app">&#xe63e;</i><span class="fl">应用中心</span><i class="qkyicon_mian fr fz_12">&#xe641;</i></a>
+        <div class="navline"></div>
+        <div class="nav_more_right col-xs-9 clear" id="allapp">
+                <div class="seachApp">
+                  <i class="qkyicon_mian">&#xe649;</i>
+                  <input type="text" class="form-control" placeholder="搜索应用">
+                </div>
+                <div class="clear">
+                    <div class="row_left"></div>
+                    <div class="row_right"></div>
+                </div> 
+        </div> 
+    </div>
+</div>
+
+<div class="yc" id="nav_news_li_mould"><!--消息列表模板-->
+    <div class="nav_news_li clear">
+        <div class="nav_news_appicon fl"><div class="app_icon">APP</div></div>
+        <div class="nav_news_info fl">
+            <div class="clear">
+                <div class="fl nav_news_txt"><label class="nav_news_name"></label><span class="nav_news_times"></span></div>
+                <div class="fr nav_news_appname"></div>
+            </div>
+            <div class="nav_news_cont"></div>
+        </div>
+    </div>
+</div>
+
+<div class="yc" id="nav_more_lli_mould"><!--全部app模板-->
+    <div class="nav_more_lli fl">
+        <h5><i class="qkyicon_mian mr5">&#xe63f;</i><span></span></h5>
+        <div class="li_a clear"></div>
+    </div>
+</div>
+
+
+
+
+
+<div class="modal fade"   id="comapp_setup" tabindex="-1" role="dialog" aria-labelledby="comapp_setupLabel">
+          <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="comapp_setupLabel">设置常用应用</h4>
+              </div>
+              <div class="modal-body pl0 pr0 pt0 pb0 modal_auto">
+                <div class="setup_box clear">
+                    <div class="setup_cont">
+                        <div class="setup_title">所有应用（36）</div>
+                        <div class="setup_ul">
+                            <div class="setup_list">
+                            <div class="setup_list_">
+                            	<div class="seachApp wd90">
+                                  <i class="qkyicon_mian">&#xe649;</i>
+                                  <input type="text" class="form-control" placeholder="搜索应用">
+                                </div>
+                                <a>校园办公</a>
+                                <a>校产管理</a>
+                                <a>课务管理</a>
+                                <a>宿舍管理</a>
+                                <a>基础数据分析</a>
+                                <a>成绩管理</a>
+                                <a>电子班牌</a>
+                            </div>   
+                            </div>
+                        </div>   
+                    </div>
+                    
+                    <div class="setup_cont_min">
+                    <i class="qkyicon_mian">&#xe639;</i>
+                    </div>
+                    <div class="setup_cont right">
+                    	<div class="setup_title">常用应用（4）</div>
+                        <div class="setup_ul">
+                            <div class="setup_list_">
+                                <a class="clear">电子图书馆 <i class="qkyicon_mian close fr">&#xe63b;</i></a>
+                                <a class="clear">校友家园 <i class="qkyicon_mian close fr">&#xe63b;</i></a>
+                                <a class="clear">考勤管理 <i class="qkyicon_mian close fr">&#xe63b;</i></a>
+                                <a class="clear">考勤管理 <i class="qkyicon_mian close fr">&#xe63b;</i></a>
+                                <a class="clear">一卡通 <i class="qkyicon_mian close fr">&#xe63b;</i></a>
+                            </div>
+                        </div>        
+                    </div>
+                    
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">确定</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
